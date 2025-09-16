@@ -64,6 +64,7 @@ Route::get('/image-crop' , function(){
 Route::get('/wizard' , function(){
     return view('employee.wizard');
 });
+
 Route::get('/authenticate-users' , function(){
     return view('admin.logindetails');
 });
@@ -73,4 +74,18 @@ Route::get('/authenticate-users' , function(){
 
 Route::get('/user' , function(){
     return view('employee.users');
+});
+
+// auth login
+
+Route::get('/login' , function(){
+    return view('auth.login');
+});
+
+Route::get('/register' , function(){
+    return view('auth.register');
+});
+
+Route::get('/forget-password' , function(){
+    return view('auth.forgetpassword');
 });
